@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>SpeedTest Lite</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
-<h1>SpeedTest Lite</h1>
+<div class="container">
 
-<div id="speed">0 Mbps</div>
-<button onclick="startTest()">Start</button>
+  <h1 class="title">Velocity Lite</h1>
+
+  <div class="speed-box">
+    <div id="speedNumber">0</div>
+    <div class="unit">Mbps</div>
+  </div>
+
+  <div class="progress">
+    <div id="progressBar"></div>
+  </div>
+
+  <div class="stats">
+    <div><span id="ping">—</span><small>Ping</small></div>
+    <div><span id="download">—</span><small>Down</small></div>
+    <div><span id="upload">—</span><small>Up</small></div>
+    <div><span id="jitter">—</span><small>Jitter</small></div>
+  </div>
+
+  <button id="startBtn">Start Test</button>
+
+  <div class="history">
+    <h3>Recent</h3>
+    <ul id="history"></ul>
+  </div>
+
+</div>
 
 <script src="app.js"></script>
+
 </body>
 </html>
